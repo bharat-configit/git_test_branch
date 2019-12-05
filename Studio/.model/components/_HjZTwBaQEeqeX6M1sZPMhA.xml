@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:appl="http://com.virtubuild/schemas/appl.ecore"
+    xmlns:comp="http://virtubuil.com/schemas/comp.ecore"
+    uuid="_HjZTwBaQEeqeX6M1sZPMhA" name="grid_new"
+    insertFree="true">
+  <variables xsi:type="comp:DeclaredVariable" uuid="_N7SNcBaREeqeX6M1sZPMhA"
+      name="availablex" visibility="800" initValue="30">
+    <domain uuid="_N7SNcxaREeqeX6M1sZPMhA" name="local"
+        visibility="300">
+      <typeSet uuid="_N7SNdRaREeqeX6M1sZPMhA" bitSet="393218"/>
+    </domain>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="_N7TbkRaREeqeX6M1sZPMhA"
+      name="availabley" visibility="800" initValue="10">
+    <domain uuid="_N7TblBaREeqeX6M1sZPMhA" name="local"
+        visibility="300">
+      <typeSet uuid="_N7TblhaREeqeX6M1sZPMhA" bitSet="393218"/>
+    </domain>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="_N7UpsBaREeqeX6M1sZPMhA"
+      name="gridInsertSize" visibility="800" initValue="1">
+    <domain uuid="_N7UpsxaREeqeX6M1sZPMhA" name="local"
+        visibility="300">
+      <typeSet uuid="_N7UptRaREeqeX6M1sZPMhA" bitSet="393231"/>
+      <values uuid="_N7UpthaREeqeX6M1sZPMhA" name="1"
+          visibility="300">
+        <displayName uuid="_N7UpuBaREeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_N7UpuRaREeqeX6M1sZPMhA" name="2"
+          visibility="300">
+        <displayName uuid="_N7UpuxaREeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_N7UpvBaREeqeX6M1sZPMhA" name="3"
+          visibility="300">
+        <displayName uuid="_N7UpvhaREeqeX6M1sZPMhA"/>
+      </values>
+    </domain>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="_N7VQ0xaREeqeX6M1sZPMhA"
+      name="gridInsertType" visibility="800" initValue="elmB">
+    <domain uuid="_N7VQ1haREeqeX6M1sZPMhA" name="local"
+        visibility="300">
+      <typeSet uuid="_N7VQ2BaREeqeX6M1sZPMhA" bitSet="393231"/>
+      <values uuid="_N7VQ2RaREeqeX6M1sZPMhA" name="elmA"
+          visibility="300">
+        <displayName uuid="_N7VQ2xaREeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_N7VQ3BaREeqeX6M1sZPMhA" name="elmB"
+          visibility="300">
+        <displayName uuid="_N7VQ3haREeqeX6M1sZPMhA"/>
+      </values>
+    </domain>
+  </variables>
+  <calculation uuid="_T_wRUBaREeqeX6M1sZPMhA" name="Calculation_Rules"
+      visibility="800">
+    <text>geoHeight=availabley*50;&#xD;
+geoWidth=availablex*50;&#xD;
+geoHeightInverted=geoHeight*-1;</text>
+  </calculation>
+  <cursorTwoD uuid="_ok034BaREeqeX6M1sZPMhA" name="Cursor">
+    <facets xsi:type="comp:CursorTwoDColorFacet" uuid="_ok034RaREeqeX6M1sZPMhA"
+        geoUnit="_YW1bwBaQEeqeX6M1sZPMhA">
+      <visual href="../product_model.xml#_lalJwBBMEeqi0eC3q3kwAg"/>
+    </facets>
+  </cursorTwoD>
+  <geometry annotation="Order of visuals&#xD;&#xA;0: grid visuals&#xD;&#xA;20: gridcursor&#xD;&#xA;30: gridsensor&#xD;&#xA;40: elements"
+      uuid="_HjZTwRaQEeqeX6M1sZPMhA" deletable="false"
+      name="root">
+    <twoDElement xsi:type="comp:TwoDText" uuid="_YWyYcBaQEeqeX6M1sZPMhA"
+        name="Text" text="(text not set)" fontSize="20">
+      <facets xsi:type="comp:TwoDDynamicTextFacet" uuid="_YWyYchaQEeqeX6M1sZPMhA"
+          textDynamic="me"/>
+      <translation uuid="_YWyYcxaQEeqeX6M1sZPMhA" x="-70.0"
+          z="20.0"/>
+    </twoDElement>
+    <twoDElement xsi:type="comp:TwoDBox" uuid="_YW0NoBaQEeqeX6M1sZPMhA"
+        name="gridoutline" strokeWidth="3">
+      <facets xsi:type="comp:TwoDDynamicSizeFacet" uuid="_YW0NohaQEeqeX6M1sZPMhA"
+          heightDynamic="geoHeight" widthDynamic="geoWidth"/>
+      <translation uuid="_YW0NoxaQEeqeX6M1sZPMhA"/>
+      <bgColor href="../product_model.xml#_zyWRMGQEEeSDd6k47owxsA"/>
+      <color href="../product_model.xml#_Dvuz8ce5EeK1ILHtYeZxPw"/>
+    </twoDElement>
+    <units uuid="_YW1bwBaQEeqeX6M1sZPMhA" name="cursor"
+        order="20"/>
+    <units uuid="_YW4fEBaQEeqeX6M1sZPMhA" name="gridsensor"
+        order="30"/>
+    <units uuid="_YW5tMBaQEeqeX6M1sZPMhA" name="interaction"
+        order="25">
+      <children uuid="_YW5tMRaQEeqeX6M1sZPMhA" name="interaction_legal"/>
+      <children uuid="_YW5tMhaQEeqeX6M1sZPMhA" name="interaction_preview"
+          order="1"/>
+      <children uuid="_YW5tMxaQEeqeX6M1sZPMhA" name="interaction_cell"
+          order="2"/>
+    </units>
+    <units uuid="_YW67UBaQEeqeX6M1sZPMhA" name="nextgrid"
+        position="(0,0,20)">
+      <facets xsi:type="comp:GeoUnitLineJointFacet"
+          uuid="_YW67URaQEeqeX6M1sZPMhA" variable="geoHeight">
+        <vector xsi:type="appl:Coordinate3D" uuid="_YW67UxaQEeqeX6M1sZPMhA"
+            z="1.0"/>
+      </facets>
+    </units>
+    <units uuid="_12QuMBaQEeqeX6M1sZPMhA" name="elements"
+        order="40">
+      <children uuid="_gaPJEBdiEeq9V_Xe9l2jjA" deletable="false"
+          name="meh1geo" enabled="false" editable="false">
+        <facets xsi:type="comp:GeoUnitLineJointFacet"
+            uuid="_gaUBkBdiEeq9V_Xe9l2jjA" variable="offset.y1">
+          <vector xsi:type="appl:Coordinate3D" uuid="_gaUBkRdiEeq9V_Xe9l2jjA"
+              z="1.0"/>
+        </facets>
+        <children uuid="_gaV2wBdiEeq9V_Xe9l2jjA" deletable="false"
+            name="meh1geox" enabled="false" editable="false">
+          <facets xsi:type="comp:GeoUnitLineJointFacet"
+              uuid="_gaavQBdiEeq9V_Xe9l2jjA" variable="offset.x1">
+            <vector xsi:type="appl:Coordinate3D" uuid="_gaavQRdiEeq9V_Xe9l2jjA"
+                x="1.0"/>
+          </facets>
+        </children>
+      </children>
+      <children uuid="_gahc8xdiEeq9V_Xe9l2jjA" deletable="false"
+          name="meh2geo" enabled="false" editable="false">
+        <facets xsi:type="comp:GeoUnitLineJointFacet"
+            uuid="_gajSIBdiEeq9V_Xe9l2jjA" variable="offset.y2">
+          <vector xsi:type="appl:Coordinate3D" uuid="_gajSIRdiEeq9V_Xe9l2jjA"
+              z="1.0"/>
+        </facets>
+        <children uuid="_gaj5MBdiEeq9V_Xe9l2jjA" deletable="false"
+            name="meh2geox" enabled="false" editable="false">
+          <facets xsi:type="comp:GeoUnitLineJointFacet"
+              uuid="_galHUBdiEeq9V_Xe9l2jjA" variable="offset.x2">
+            <vector xsi:type="appl:Coordinate3D" uuid="_galHURdiEeq9V_Xe9l2jjA"
+                x="1.0"/>
+          </facets>
+        </children>
+      </children>
+      <children uuid="_garN8BdiEeq9V_Xe9l2jjA" deletable="false"
+          name="meh3geo" enabled="false" editable="false">
+        <facets xsi:type="comp:GeoUnitLineJointFacet"
+            uuid="_gatqMBdiEeq9V_Xe9l2jjA" variable="offset.y3">
+          <vector xsi:type="appl:Coordinate3D" uuid="_gatqMRdiEeq9V_Xe9l2jjA"
+              z="1.0"/>
+        </facets>
+        <children uuid="_gauRQBdiEeq9V_Xe9l2jjA" deletable="false"
+            name="meh3geox" enabled="false" editable="false">
+          <facets xsi:type="comp:GeoUnitLineJointFacet"
+              uuid="_gawtgBdiEeq9V_Xe9l2jjA" variable="offset.x3">
+            <vector xsi:type="appl:Coordinate3D" uuid="_gawtgRdiEeq9V_Xe9l2jjA"
+                x="1.0"/>
+          </facets>
+        </children>
+      </children>
+      <children uuid="_ga20IxdiEeq9V_Xe9l2jjA" deletable="false"
+          name="meh4geo" enabled="false" editable="false">
+        <facets xsi:type="comp:GeoUnitLineJointFacet"
+            uuid="_ga4pUBdiEeq9V_Xe9l2jjA" variable="offset.y4">
+          <vector xsi:type="appl:Coordinate3D" uuid="_ga4pURdiEeq9V_Xe9l2jjA"
+              z="1.0"/>
+        </facets>
+        <children uuid="_ga53cBdiEeq9V_Xe9l2jjA" deletable="false"
+            name="meh4geox" enabled="false" editable="false">
+          <facets xsi:type="comp:GeoUnitLineJointFacet"
+              uuid="_ga7FkBdiEeq9V_Xe9l2jjA" variable="offset.x4">
+            <vector xsi:type="appl:Coordinate3D" uuid="_ga7FkRdiEeq9V_Xe9l2jjA"
+                x="1.0"/>
+          </facets>
+        </children>
+      </children>
+      <children uuid="_ga-v8xdiEeq9V_Xe9l2jjA" deletable="false"
+          name="meh5geo" enabled="false" editable="false">
+        <facets xsi:type="comp:GeoUnitLineJointFacet"
+            uuid="_ga_-EBdiEeq9V_Xe9l2jjA" variable="offset.y5">
+          <vector xsi:type="appl:Coordinate3D" uuid="_ga_-ERdiEeq9V_Xe9l2jjA"
+              z="1.0"/>
+        </facets>
+        <children uuid="_gbBMMBdiEeq9V_Xe9l2jjA" deletable="false"
+            name="meh5geox" enabled="false" editable="false">
+          <facets xsi:type="comp:GeoUnitLineJointFacet"
+              uuid="_gbCaUBdiEeq9V_Xe9l2jjA" variable="offset.x5">
+            <vector xsi:type="appl:Coordinate3D" uuid="_gbCaURdiEeq9V_Xe9l2jjA"
+                x="1.0"/>
+          </facets>
+        </children>
+      </children>
+    </units>
+    <parentPlugs uuid="_HjZTwhaQEeqeX6M1sZPMhA" name="ParentPlug"/>
+  </geometry>
+  <roles uuid="_UR8YEBaSEeqeX6M1sZPMhA" name="nextgrid"
+      components="NONE, grid_new, " toas="">
+    <facets xsi:type="comp:PlugFacet" uuid="_UR8YFRaSEeqeX6M1sZPMhA"
+        geoUnit="_YW67UBaQEeqeX6M1sZPMhA"/>
+    <domain uuid="_UR8YFhaSEeqeX6M1sZPMhA" name="local"
+        visibility="300">
+      <typeSet uuid="_UR8YGBaSEeqeX6M1sZPMhA" bitSet="65536"/>
+      <values uuid="_UR8YGRaSEeqeX6M1sZPMhA" name="NONE"
+          visibility="300">
+        <displayName uuid="_UR8YGxaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_WW8VsBaSEeqeX6M1sZPMhA" name="grid_new"
+          visibility="300">
+        <displayName uuid="_WW8VsRaSEeqeX6M1sZPMhA"/>
+      </values>
+    </domain>
+  </roles>
+  <roles uuid="_iCYpMBaSEeqeX6M1sZPMhA" deletable="false"
+      name="meh.1" enabled="false" editable="false"
+      initValue="NONE" pickOnSet="OFF" components="NONE"
+      toas="element">
+    <facets xsi:type="comp:PlugFacet" uuid="_iCYpQBaSEeqeX6M1sZPMhA"
+        geoUnit="_gaV2wBdiEeq9V_Xe9l2jjA"/>
+    <domain uuid="_iCYpKBaSEeqeX6M1sZPMhA" name="local"
+        visibility="300" complete="true">
+      <typeSet uuid="_iCYpKRaSEeqeX6M1sZPMhA" bitSet="65536"/>
+      <values uuid="_iCYpKhaSEeqeX6M1sZPMhA" name="elmA"
+          visibility="300">
+        <displayName uuid="_iCYpKxaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpLBaSEeqeX6M1sZPMhA" name="elmB"
+          visibility="300">
+        <displayName uuid="_iCYpLRaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpLhaSEeqeX6M1sZPMhA" name="NONE"
+          visibility="300">
+        <displayName uuid="_iCYpLxaSEeqeX6M1sZPMhA"/>
+      </values>
+    </domain>
+  </roles>
+  <roles uuid="_iCYpSRaSEeqeX6M1sZPMhA" deletable="false"
+      name="meh.2" enabled="false" editable="false"
+      initValue="NONE" pickOnSet="OFF" components="NONE"
+      toas="element">
+    <facets xsi:type="comp:PlugFacet" uuid="_iCYpWRaSEeqeX6M1sZPMhA"
+        geoUnit="_gaj5MBdiEeq9V_Xe9l2jjA"/>
+    <domain uuid="_iCYpQRaSEeqeX6M1sZPMhA" name="local"
+        visibility="300" complete="true">
+      <typeSet uuid="_iCYpQhaSEeqeX6M1sZPMhA" bitSet="65536"/>
+      <values uuid="_iCYpQxaSEeqeX6M1sZPMhA" name="elmA"
+          visibility="300">
+        <displayName uuid="_iCYpRBaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpRRaSEeqeX6M1sZPMhA" name="elmB"
+          visibility="300">
+        <displayName uuid="_iCYpRhaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpRxaSEeqeX6M1sZPMhA" name="NONE"
+          visibility="300">
+        <displayName uuid="_iCYpSBaSEeqeX6M1sZPMhA"/>
+      </values>
+    </domain>
+  </roles>
+  <roles uuid="_iCYpYhaSEeqeX6M1sZPMhA" deletable="false"
+      name="meh.3" enabled="false" editable="false"
+      initValue="NONE" pickOnSet="OFF" components="NONE"
+      toas="element">
+    <facets xsi:type="comp:PlugFacet" uuid="_iCYpchaSEeqeX6M1sZPMhA"
+        geoUnit="_gauRQBdiEeq9V_Xe9l2jjA"/>
+    <domain uuid="_iCYpWhaSEeqeX6M1sZPMhA" name="local"
+        visibility="300" complete="true">
+      <typeSet uuid="_iCYpWxaSEeqeX6M1sZPMhA" bitSet="65536"/>
+      <values uuid="_iCYpXBaSEeqeX6M1sZPMhA" name="elmA"
+          visibility="300">
+        <displayName uuid="_iCYpXRaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpXhaSEeqeX6M1sZPMhA" name="elmB"
+          visibility="300">
+        <displayName uuid="_iCYpXxaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpYBaSEeqeX6M1sZPMhA" name="NONE"
+          visibility="300">
+        <displayName uuid="_iCYpYRaSEeqeX6M1sZPMhA"/>
+      </values>
+    </domain>
+  </roles>
+  <roles uuid="_iCYpexaSEeqeX6M1sZPMhA" deletable="false"
+      name="meh.4" enabled="false" editable="false"
+      initValue="NONE" pickOnSet="OFF" components="NONE"
+      toas="element">
+    <facets xsi:type="comp:PlugFacet" uuid="_iCYpixaSEeqeX6M1sZPMhA"
+        geoUnit="_ga53cBdiEeq9V_Xe9l2jjA"/>
+    <domain uuid="_iCYpcxaSEeqeX6M1sZPMhA" name="local"
+        visibility="300" complete="true">
+      <typeSet uuid="_iCYpdBaSEeqeX6M1sZPMhA" bitSet="65536"/>
+      <values uuid="_iCYpdRaSEeqeX6M1sZPMhA" name="elmA"
+          visibility="300">
+        <displayName uuid="_iCYpdhaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpdxaSEeqeX6M1sZPMhA" name="elmB"
+          visibility="300">
+        <displayName uuid="_iCYpeBaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpeRaSEeqeX6M1sZPMhA" name="NONE"
+          visibility="300">
+        <displayName uuid="_iCYpehaSEeqeX6M1sZPMhA"/>
+      </values>
+    </domain>
+  </roles>
+  <roles uuid="_iCYplBaSEeqeX6M1sZPMhA" deletable="false"
+      name="meh.5" enabled="false" editable="false"
+      initValue="NONE" pickOnSet="OFF" components="NONE"
+      toas="element">
+    <facets xsi:type="comp:PlugFacet" uuid="_iCYppBaSEeqeX6M1sZPMhA"
+        geoUnit="_gbBMMBdiEeq9V_Xe9l2jjA"/>
+    <domain uuid="_iCYpjBaSEeqeX6M1sZPMhA" name="local"
+        visibility="300" complete="true">
+      <typeSet uuid="_iCYpjRaSEeqeX6M1sZPMhA" bitSet="65536"/>
+      <values uuid="_iCYpjhaSEeqeX6M1sZPMhA" name="elmA"
+          visibility="300">
+        <displayName uuid="_iCYpjxaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpkBaSEeqeX6M1sZPMhA" name="elmB"
+          visibility="300">
+        <displayName uuid="_iCYpkRaSEeqeX6M1sZPMhA"/>
+      </values>
+      <values uuid="_iCYpkhaSEeqeX6M1sZPMhA" name="NONE"
+          visibility="300">
+        <displayName uuid="_iCYpkxaSEeqeX6M1sZPMhA"/>
+      </values>
+    </domain>
+  </roles>
+  <controllers xsi:type="comp:GridController" uuid="_ZoAvwBaQEeqeX6M1sZPMhA"
+      name="Grid_Controller" availableVarY="availabley"
+      availableVarX="availablex" heightVarName="elmHeight"
+      widthVarName="elmWidth" positionX="posX" positionY="posY"
+      legal="gridLegal" root="_12QuMBaQEeqeX6M1sZPMhA"
+      parentHandle="_YW4fEBaQEeqeX6M1sZPMhA" rolesPrefix="meh"
+      numElements="5" pickOnSet="OFF" components="NONE"
+      toas="element">
+    <facets xsi:type="comp:GridSensorFacet" uuid="_ZoAvwRaQEeqeX6M1sZPMhA"
+        name="Grid_Sensor">
+      <twoDElement xsi:type="comp:TwoDBox" href="../product_model.xml#_V2X1ABBMEeqi0eC3q3kwAg"/>
+      <standardColor href="../product_model.xml#_dOfPsXkVEeOQkM8a0LjIiQ"/>
+      <errorColor href="../product_model.xml#_42WaIce5EeK1ILHtYeZxPw"/>
+      <visual href="../product_model.xml#_S73ywBBMEeqi0eC3q3kwAg"/>
+      <selectedColor href="../product_model.xml#_Yoadkce6EeK1ILHtYeZxPw"/>
+      <dropLegalColor href="../product_model.xml#_IBz3sce6EeK1ILHtYeZxPw"/>
+      <dropIllegalColor href="../product_model.xml#_42WaIce5EeK1ILHtYeZxPw"/>
+    </facets>
+    <facets xsi:type="comp:GridInteractionFacet" uuid="_ZoAvwhaQEeqeX6M1sZPMhA"
+        insertTypeVar="gridInsertType" insertSizeVar="gridInsertSize"
+        legalAreaHid="_YW5tMRaQEeqeX6M1sZPMhA" legalAreaWidthVar="width"
+        legalAreaHeightVar="height" insertPreviewHid="_YW5tMhaQEeqeX6M1sZPMhA"
+        insertPreviewWidthVar="width" insertPreviewHeightVar="height"
+        cellHid="_YW5tMxaQEeqeX6M1sZPMhA">
+      <legalAreaRefId href="../product_model.xml#_xSJJcBBTEeqi0eC3q3kwAg"/>
+      <insertPreviewRefId href="../product_model.xml#_WRWxwBBVEeqi0eC3q3kwAg"/>
+      <cellRefId href="../product_model.xml#_lvDO0BBVEeqi0eC3q3kwAg"/>
+    </facets>
+  </controllers>
+  <displayName uuid="_HjZTwxaQEeqeX6M1sZPMhA" value="Grid"/>
+</comp:Component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:comp="http://virtubuil.com/schemas/comp.ecore"
+    uuid="_VFPSEA-TEeqi0eC3q3kwAg" name="elmB"
+    toaPrefix="element">
+  <template href="_W-hScA-UEeqi0eC3q3kwAg.xml#_W-hScA-UEeqi0eC3q3kwAg"/>
+  <geometry uuid="_VFP5IQ-TEeqi0eC3q3kwAg" deletable="false"
+      name="root">
+    <twoDElement xsi:type="comp:TwoDBox" uuid="_4U3LEA-fEeqi0eC3q3kwAg"
+        name="Box" strokeWidth="2">
+      <facets xsi:type="comp:TwoDDynamicSizeFacet" uuid="_ANXYYA-gEeqi0eC3q3kwAg"
+          heightDynamic="geoHeight" widthDynamic="geoWidth"/>
+      <translation uuid="_4U3LEQ-fEeqi0eC3q3kwAg"/>
+      <bgColor href="../product_model.xml#_xMl9EAHyEeS27ulxLc-PaQ"/>
+      <color href="../product_model.xml#_Dvuz8ce5EeK1ILHtYeZxPw"/>
+    </twoDElement>
+    <parentPlugs uuid="_VFP5Ig-TEeqi0eC3q3kwAg" name="ParentPlug"/>
+  </geometry>
+  <displayName uuid="_VFP5Iw-TEeqi0eC3q3kwAg" value="Element B"/>
+</comp:Component>

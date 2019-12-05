@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comp:ComponentTemplate xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:array="http://virtubuil.com/schemas/array.ecore"
+    xmlns:comp="http://virtubuil.com/schemas/comp.ecore"
+    uuid="_W-hScA-UEeqi0eC3q3kwAg"
+    name="element">
+  <variables xsi:type="comp:DeclaredVariable" uuid="_2RKnQA-aEeqi0eC3q3kwAg"
+      name="elmHeight" visibility="800" initValue="1">
+    <domain uuid="_2RKnQQ-aEeqi0eC3q3kwAg" name="local"
+        visibility="300">
+      <typeSet uuid="_2RKnQg-aEeqi0eC3q3kwAg" bitSet="393218"/>
+    </domain>
+    <domainGlobal href="../product_model.xml#_PlFD0BBREeqi0eC3q3kwAg"/>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="_5LKTMA-aEeqi0eC3q3kwAg"
+      name="elmWidth" visibility="800" initValue="1">
+    <domain uuid="_5LKTMQ-aEeqi0eC3q3kwAg" name="local"
+        visibility="300">
+      <typeSet uuid="_5LKTMg-aEeqi0eC3q3kwAg" bitSet="393218"/>
+    </domain>
+    <domainGlobal href="../product_model.xml#_PlFD0BBREeqi0eC3q3kwAg"/>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="_9FoksA-aEeqi0eC3q3kwAg"
+      name="posX" visibility="800">
+    <domain uuid="_9FoksQ-aEeqi0eC3q3kwAg" name="local"
+        visibility="300">
+      <typeSet uuid="_9Foksg-aEeqi0eC3q3kwAg" bitSet="393218"/>
+    </domain>
+    <domainGlobal href="../product_model.xml#_Gd7ycBaOEeqeX6M1sZPMhA"/>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="__ErEQA-aEeqi0eC3q3kwAg"
+      name="posY" visibility="800">
+    <domain uuid="__ErrUA-aEeqi0eC3q3kwAg" name="local"
+        visibility="300">
+      <typeSet uuid="__ErrUg-aEeqi0eC3q3kwAg" bitSet="393218"/>
+    </domain>
+    <domainGlobal href="../product_model.xml#_Gd7ycBaOEeqeX6M1sZPMhA"/>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="_S1JL0A-gEeqi0eC3q3kwAg"
+      name="geoWidth" visibility="800" initValue="10">
+    <domain uuid="_S1JL0Q-gEeqi0eC3q3kwAg" name="local"
+        visibility="300">
+      <typeSet uuid="_S1JL0g-gEeqi0eC3q3kwAg" bitSet="393224"/>
+    </domain>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="_Yc0mAA-gEeqi0eC3q3kwAg"
+      name="geoHeight" visibility="800" initValue="10">
+    <domain uuid="_Yc0mAw-gEeqi0eC3q3kwAg" name="local"
+        visibility="300">
+      <typeSet uuid="_Yc0mBQ-gEeqi0eC3q3kwAg" bitSet="393224"/>
+    </domain>
+  </variables>
+  <variables xsi:type="comp:DeclaredVariable" uuid="_eXqykBBKEeqi0eC3q3kwAg"
+      name="gridLegal" visibility="800">
+    <domain uuid="_eXqykRBKEeqi0eC3q3kwAg" name="local"
+        visibility="300">
+      <typeSet uuid="_eXqykhBKEeqi0eC3q3kwAg" bitSet="393217"/>
+    </domain>
+  </variables>
+  <logic uuid="_FEWakBBSEeqi0eC3q3kwAg" name="Logic_Rules"
+      visibility="800">
+    <children xsi:type="array:TableRelation" uuid="_ShkNoBBSEeqi0eC3q3kwAg"
+        name="Table_Relation" visibility="800">
+      <columns uuid="_TW3d8BBSEeqi0eC3q3kwAg" name="gridLegal"
+          visibility="100" databaseAlias="Table_Column">
+        <cells uuid="_mjiHIBBSEeqi0eC3q3kwAg" value="0"/>
+        <cells uuid="_nhztQBBSEeqi0eC3q3kwAg" value="1"/>
+        <cells uuid="_C0qIgBBVEeqi0eC3q3kwAg" value=""/>
+      </columns>
+      <columns uuid="_lclGIBBSEeqi0eC3q3kwAg" name="gridLegalSwitch"
+          visibility="100" databaseAlias="Table_Column">
+        <cells uuid="_mjiHIRBSEeqi0eC3q3kwAg" value="0"/>
+        <cells uuid="_nhztQRBSEeqi0eC3q3kwAg" value="-1"/>
+        <cells uuid="_C0qIgRBVEeqi0eC3q3kwAg" value=""/>
+      </columns>
+    </children>
+  </logic>
+  <calculation uuid="_eIWlcA-gEeqi0eC3q3kwAg" name="Calculation_Rules"
+      visibility="800">
+    <text>geoWidth=elmWidth*50;&#xD;
+geoHeight=elmHeight*50;</text>
+  </calculation>
+  <cursorTwoD uuid="_RBPmMBBZEeqi0eC3q3kwAg" name="Cursor">
+    <facets xsi:type="comp:CursorTwoDColorFacet" uuid="_RnPPMBBZEeqi0eC3q3kwAg"
+        geoUnit="_i8kYwBBYEeqi0eC3q3kwAg" cursorType="DRAGANDDROP">
+      <visual href="../product_model.xml#_sHQmsBBYEeqi0eC3q3kwAg"/>
+    </facets>
+  </cursorTwoD>
+  <geometry uuid="_W-hScQ-UEeqi0eC3q3kwAg" deletable="false"
+      name="root">
+    <units uuid="_wjGkEBBREeqi0eC3q3kwAg" name="legalSwitch"
+        visualEffects="_CUydABBSEeqi0eC3q3kwAg" order="10">
+      <facets xsi:type="comp:GeoUnitTwoDSwitchFacet"
+          uuid="_CUxO4BBSEeqi0eC3q3kwAg" variable="gridLegalSwitch">
+        <visualEffect uuid="_CUydABBSEeqi0eC3q3kwAg"
+            targets="_wjGkEBBREeqi0eC3q3kwAg" variable="gridLegalSwitch"/>
+      </facets>
+      <twoDElement xsi:type="comp:TwoDBox" uuid="_xnFJkBBREeqi0eC3q3kwAg"
+          name="Box">
+        <facets xsi:type="comp:TwoDDynamicSizeFacet"
+            uuid="_1LYWwBBREeqi0eC3q3kwAg" heightDynamic="geoHeight"
+            widthDynamic="geoWidth"/>
+        <translation uuid="_xnFJkhBREeqi0eC3q3kwAg"/>
+        <bgColor href="../product_model.xml#N65567"/>
+        <color href="../product_model.xml#_zyWRMGQEEeSDd6k47owxsA"/>
+      </twoDElement>
+    </units>
+    <units uuid="_i8kYwBBYEeqi0eC3q3kwAg" name="cursor"
+        order="5"/>
+    <parentPlugs uuid="_W-hScg-UEeqi0eC3q3kwAg" name="ParentPlug"/>
+  </geometry>
+  <componentsUsingMe xsi:type="comp:Component" href="_TRqboA-TEeqi0eC3q3kwAg.xml#_TRqboA-TEeqi0eC3q3kwAg"/>
+  <componentsUsingMe xsi:type="comp:Component" href="_VFPSEA-TEeqi0eC3q3kwAg.xml#_VFPSEA-TEeqi0eC3q3kwAg"/>
+</comp:ComponentTemplate>
